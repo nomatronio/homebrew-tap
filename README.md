@@ -38,6 +38,10 @@ Release archives are published from the public Nomatron releases repository:
 
 [https://github.com/nomatronio/nomatron-releases](https://github.com/nomatronio/nomatron-releases)
 
+The public release download endpoint is:
+
+[https://get.nomatron.io](https://get.nomatron.io)
+
 ## Documentation
 
 Documentation and install guides are available at:
