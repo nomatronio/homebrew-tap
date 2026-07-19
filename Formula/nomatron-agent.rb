@@ -5,21 +5,21 @@
 class NomatronAgent < Formula
   desc "Nomatron network agent."
   homepage "https://get.nomatron.io"
-  version "0.1.0-rc.18"
+  version "0.1.0-rc.19"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.18/nomatron-agent_0.1.0-rc.18_darwin_amd64.zip"
-      sha256 "b7b94432f5b61e996dd40ac23d1d898095b54d814aacf8997f387c92e90d6cf6"
+      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.19/nomatron-agent_0.1.0-rc.19_darwin_amd64.zip"
+      sha256 "0a0e97b4e78f9895e87a74c75e0585dbd7ed750ef4f18e5b6550cc8fd13a6441"
 
       define_method(:install) do
         bin.install "nomatron-agent"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.18/nomatron-agent_0.1.0-rc.18_darwin_arm64.zip"
-      sha256 "74913ceff8282df6e55075eb8f6fcff31d571a244e7d97e654003e5ff4e63674"
+      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.19/nomatron-agent_0.1.0-rc.19_darwin_arm64.zip"
+      sha256 "31cc3fc8fe020936d5588217f3799f0fd60b69e085b30f91478daaae197ca85f"
 
       define_method(:install) do
         bin.install "nomatron-agent"
@@ -29,15 +29,15 @@ class NomatronAgent < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.18/nomatron-agent_0.1.0-rc.18_linux_amd64.tar.gz"
-      sha256 "59cc95084d38b90f3dbd9c0f6584d8d62fef9ad1c6836db5face5236e4a04420"
+      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.19/nomatron-agent_0.1.0-rc.19_linux_amd64.tar.gz"
+      sha256 "0273ef34a0873e0fe18ac2e646301220135536c20c5fbdb18957adb610ee624c"
       define_method(:install) do
         bin.install "nomatron-agent"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.18/nomatron-agent_0.1.0-rc.18_linux_arm64.tar.gz"
-      sha256 "78260f70e4fcf39aaa7ae86a2f0be0f50f1d3dc3324aff3ea232560f71212096"
+      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.19/nomatron-agent_0.1.0-rc.19_linux_arm64.tar.gz"
+      sha256 "8a3210c36373310e621303b1e3bcc48604149081c2af5f9b97f8d3500aacc269"
       define_method(:install) do
         bin.install "nomatron-agent"
       end
