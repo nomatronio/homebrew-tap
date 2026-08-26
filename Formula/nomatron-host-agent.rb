@@ -5,20 +5,20 @@
 class NomatronHostAgent < Formula
   desc "Nomatron Application Networking Host Agent."
   homepage "https://get.nomatron.io"
-  version "0.1.0-rc.34"
+  version "0.1.0-rc.35"
   license "Proprietary"
   depends_on :linux
 
   if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-    url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.34/nomatron-host-agent_0.1.0-rc.34_linux_amd64.tar.gz"
-    sha256 "d71a78710c872ba847b7d95f3cb60c937f42621fe18bb1c0ff6b316a5ca82435"
+    url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.35/nomatron-host-agent_0.1.0-rc.35_linux_amd64.tar.gz"
+    sha256 "5ddadd42306fe4b468d2ef2367ad53072ce2c0285a912dd17105397ef6afd78b"
     define_method(:install) do
       bin.install "nomatron-host-agent"
     end
   end
   if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.34/nomatron-host-agent_0.1.0-rc.34_linux_arm64.tar.gz"
-    sha256 "b91cecde4d0e49ea2e2a858f957764d05b56a2dd5f34536bc913a5d98a853c52"
+    url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.35/nomatron-host-agent_0.1.0-rc.35_linux_arm64.tar.gz"
+    sha256 "ee54cc2b6088fb4fd5cd30089598e87343b4dc2a5289c7ecfbdfbe1cd373d989"
     define_method(:install) do
       bin.install "nomatron-host-agent"
     end
