@@ -5,21 +5,21 @@
 class NomatronConnectivityAgent < Formula
   desc "Nomatron Connectivity Agent."
   homepage "https://get.nomatron.io"
-  version "0.1.0-rc.43"
+  version "0.1.0-rc.44"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.43/nomatron-connectivity-agent_0.1.0-rc.43_darwin_amd64.zip"
-      sha256 "34d37c20a24b8973e29fdbcb3a73d9b907637916173a6a3feb0ab058aac726d4"
+      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.44/nomatron-connectivity-agent_0.1.0-rc.44_darwin_amd64.zip"
+      sha256 "514eb7b778a75d2d708f6d708ab035dada3ae16ad51c3862a15f3d1cec9fdbbd"
 
       define_method(:install) do
         bin.install "nomatron-connectivity-agent"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.43/nomatron-connectivity-agent_0.1.0-rc.43_darwin_arm64.zip"
-      sha256 "3168a9c2dbddcfb806d23419b88e970904b728fc659b5f612fd46ba3c6d3a56f"
+      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.44/nomatron-connectivity-agent_0.1.0-rc.44_darwin_arm64.zip"
+      sha256 "2e14d1593f6041f9d67e76aa31837243544055276195f4070e7a4d2d2ab1b4a4"
 
       define_method(:install) do
         bin.install "nomatron-connectivity-agent"
@@ -29,15 +29,15 @@ class NomatronConnectivityAgent < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.43/nomatron-connectivity-agent_0.1.0-rc.43_linux_amd64.tar.gz"
-      sha256 "b425757ce474099b99f06c802c8c1a39f2d25110434a09780122717ed00b36cb"
+      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.44/nomatron-connectivity-agent_0.1.0-rc.44_linux_amd64.tar.gz"
+      sha256 "fa11e243ae07d4a913b4303e27b67df23e283b8ee192197b487028f3e7100a9d"
       define_method(:install) do
         bin.install "nomatron-connectivity-agent"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.43/nomatron-connectivity-agent_0.1.0-rc.43_linux_arm64.tar.gz"
-      sha256 "e576c1947297a1a47acd839c7a0af1a5ef9608cab5da002adaface6e7b5d9e4e"
+      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.44/nomatron-connectivity-agent_0.1.0-rc.44_linux_arm64.tar.gz"
+      sha256 "958ea917d529b5a24404551558d6feb81f9589f18f14cee5c09781ff54c11321"
       define_method(:install) do
         bin.install "nomatron-connectivity-agent"
       end
