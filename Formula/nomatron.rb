@@ -5,21 +5,21 @@
 class Nomatron < Formula
   desc "Nomatron Server CLI."
   homepage "https://get.nomatron.io"
-  version "0.1.0-rc.54"
+  version "0.1.0-rc.55"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.54/nomatron_0.1.0-rc.54_darwin_amd64.zip"
-      sha256 "20fa87a1cbe17b1895657e414d2f0a6a1b6afbdbef968dcdf9e5ba0a7fa79570"
+      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.55/nomatron_0.1.0-rc.55_darwin_amd64.zip"
+      sha256 "d2a796bfe515174771b7c535e96dea1b1e9f2d670a11adde026419de54fe454c"
 
       define_method(:install) do
         bin.install "nomatron"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.54/nomatron_0.1.0-rc.54_darwin_arm64.zip"
-      sha256 "369ffce2616fd2f45afaa4e019cec4c42e710410e7b2f578791d94e7af6f8b36"
+      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.55/nomatron_0.1.0-rc.55_darwin_arm64.zip"
+      sha256 "4f08d5111034feade58641aaf6833572cb0461a2fe7a5569c6e1890fe3368be0"
 
       define_method(:install) do
         bin.install "nomatron"
@@ -29,15 +29,15 @@ class Nomatron < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.54/nomatron_0.1.0-rc.54_linux_amd64.tar.gz"
-      sha256 "05c88f554608668a803116060b98e8ea45e15edfcdf0c3832b268fae171cdb0d"
+      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.55/nomatron_0.1.0-rc.55_linux_amd64.tar.gz"
+      sha256 "cb7bf87fbccada1271daf24ea1128d108ac5dd06e4fc052ee70c3ba3c4d97ce1"
       define_method(:install) do
         bin.install "nomatron"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.54/nomatron_0.1.0-rc.54_linux_arm64.tar.gz"
-      sha256 "a42847b2e069b6abe130e4a81315c8723e435182e8e17188e77fb1211100240c"
+      url "https://github.com/nomatronio/nomatron-releases/releases/download/v0.1.0-rc.55/nomatron_0.1.0-rc.55_linux_arm64.tar.gz"
+      sha256 "2068d5fe99b725c010b4f9a04420385e425d13ac3b398305afd00813c3b06020"
       define_method(:install) do
         bin.install "nomatron"
       end
