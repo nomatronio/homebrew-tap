@@ -8,11 +8,11 @@ Official Homebrew tap for Nomatron release packages.
 brew install nomatronio/tap/nomatron
 ```
 
-To install the Nomatron network agent:
-
 ```sh
-brew install nomatronio/tap/nomatron-agent
+brew install nomatronio/tap/nomatron-connectivity-agent
 ```
+
+The former `nomatron-agent` formula was renamed to `nomatron-connectivity-agent`; `brew upgrade` migrates existing installs automatically.
 
 ## Upgrade
 
@@ -21,11 +21,9 @@ brew update
 brew upgrade nomatron
 ```
 
-For the agent:
-
 ```sh
 brew update
-brew upgrade nomatron-agent
+brew upgrade nomatron-connectivity-agent
 ```
 
 ## About Nomatron
