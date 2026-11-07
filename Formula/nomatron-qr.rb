@@ -2,17 +2,17 @@
 class NomatronQr < Formula
   desc "Generate Nomatron-branded light and dark QR code PNGs"
   homepage "https://github.com/nomatronio/qr-code-gen-releases"
-  version "0.1.0"
+  version "0.1.1"
   depends_on :macos
 
   on_macos do
     on_arm do
-      url "https://github.com/nomatronio/qr-code-gen-releases/releases/download/v0.1.0/nomatron-qr_0.1.0_darwin_arm64.tar.gz"
-      sha256 "b71adcdff2d0087e380987efa8754481c5c14f41a984e508b059112f2d73578d"
+      url "https://github.com/nomatronio/qr-code-gen-releases/releases/download/v0.1.1/nomatron-qr_0.1.1_darwin_arm64.tar.gz"
+      sha256 "5d89e377b87e2fae2474aa675ea5cf894961cfc984b941b53098e8b18615f287"
     end
     on_intel do
-      url "https://github.com/nomatronio/qr-code-gen-releases/releases/download/v0.1.0/nomatron-qr_0.1.0_darwin_amd64.tar.gz"
-      sha256 "1eb314cbc05661eb4f985c665edaed2a5b1b585430db12d3aa3afa16a6a4d5b6"
+      url "https://github.com/nomatronio/qr-code-gen-releases/releases/download/v0.1.1/nomatron-qr_0.1.1_darwin_amd64.tar.gz"
+      sha256 "8b93a9e9868c0386a89a4a3ba6a2fafbbd220b0ec0afc03fbd52fa34a6a47b9a"
     end
   end
 
